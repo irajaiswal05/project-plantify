@@ -1,0 +1,52 @@
+.about-page {
+    padding: var(--space-80) 0;
+    min-height: 80vh; 
+    display: flex;
+    align-items: center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: var(--space-64);
+    align-items: center;
+}
+
+.about-img {
+    width: 100%;
+    height: 450px; 
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 16px 40px rgba(55, 67, 42, 0.1); 
+}
+
+.about-text-container h1 {
+    margin-bottom: var(--space-24);
+    color: var(--dark-green); 
+}
+
+.about-text-container p {
+    font-size: 1.05rem;
+    margin-bottom: var(--space-16);
+}
+
+.signature {
+    margin-top: var(--space-48);
+    padding-top: var(--space-24);
+    border-top: 1px solid var(--light-green);
+}
+
+.signature h3 {
+    font-family: var(--font-heading);
+    
+    color: var(--dark-green);
+    margin-bottom: var(--space-8);
+}
+
+@media (max-width: 768px) {
+    .about-grid { 
+        grid-template-columns: 1fr; 
+        text-align: left; 
+        gap: var(--space-32); 
+    }
+}

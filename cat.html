@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantify | Categories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .shop-section { padding: 60px 0; }
+        
+        .category-row { margin-bottom: 80px; }
+        
+        .category-row h2 {
+            font-family: 'Playfair Display', serif;
+            color: #2c3e2d;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-transform: capitalize;
+        }
+
+    
+        .grid-wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 30px; 
+        }
+
+        .product-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+        }
+
+        .product-img-box {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        .product-img-box img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .product-info h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .price {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            color: #5b7050;
+            margin-bottom: 20px;
+        }
+
+        .add-to-cart-btn {
+            background-color: transparent;
+            color: #2c3e2d;
+            border: 1px solid #2c3e2d;
+            padding: 10px 0;
+            width: 100%;
+            border-radius: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #2c3e2d;
+            color: #ffffff;
+        }
+
+        @media (max-width: 992px) { .grid-wrapper { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 576px) { .grid-wrapper { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body class="bg-soft-white">
+
+    <header class="site-header bg-dark-green">
+        <div class="container header-inner">
+            <div class="logo">
+                <h2><a href="homepage.html" style="color: inherit; text-decoration: none;">Plantify.</a></h2>
+            </div>
+            <nav class="main-nav">
+                <a href="homepage.html">Home</a>
+                <a href="categories.html">Categories</a>
+                <a href="care.html">Care Guide</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="shop-section container">
+        
+        <div class="section-header text-center" style="margin-bottom: 60px;">
+            <h1 style="font-family: 'Playfair Display', serif; color: #2c3e2d; font-size: 3rem;">Shop by Category</h1>
+            <p style="font-family: 'Poppins', sans-serif; color: #555;">Find the perfect plant for your space and lifestyle.</p>
+        </div>
+
+        <!-- 1. OUR GREEN PICKS -->
+        <div class="category-row">
+            <h2>Our Green Picks</h2>
+            <div class="grid-wrapper">
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p7.png" alt="Aglaonema Crete"></div>
+                    <div class="product-info"><h4>Lucky Bamboo</h4><p class="price">₹250</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p14.jpg" alt="Blue Star Fern"></div>
+                    <div class="product-info"><h4>Golden Pothos</h4><p class="price">₹175</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p11.png" alt="Calathea White"></div>
+                    <div class="product-info"><h4>Spider Plant</h4><p class="price">₹150</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p6.png" alt="Ficus Burgundy"></div>
+                    <div class="product-info"><h4>ZZ Plant</h4><p class="price">₹200</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. AIR PURIFYING PLANTS -->
+        <div class="category-row">
+            <h2>Air Purifying Plants</h2>
+            <div class="grid-wrapper">
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p20.png" alt="Snake Plant"></div>
+                    <div class="product-info"><h4>Snake Plant</h4><p class="price">₹85</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p9.png" alt="ZZ Plant"></div>
+                    <div class="product-info"><h4>Areca Palm</h4><p class="price">₹90</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p2.png" alt="Golden Pothos"></div>
+                    <div class="product-info"><h4>Boston Fern</h4><p class="price">₹150</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p1.png" alt="Peace Lily"></div>
+                    <div class="product-info"><h4>Aloe Vera </h4><p class="price">₹100</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. AESTHETIC PLANTS -->
+        <div class="category-row">
+            <h2>Aesthetic Plants</h2>
+            <div class="grid-wrapper">
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p8.png" alt="Monstera Deliciosa"></div>
+                    <div class="product-info"><h4>Monstera</h4><p class="price">₹200</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p4.png" alt="Fiddle Leaf Fig"></div>
+                    <div class="product-info"><h4>Fiddle Leaf Fig</h4><p class="price">₹250</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p3.png" alt="Bird of Paradise"></div>
+                    <div class="product-info"><h4>Calathea</h4><p class="price">₹300</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p19.png" alt="Rubber Plant"></div>
+                    <div class="product-info"><h4>Rubber Plant</h4><p class="price">₹350</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. SUCCULENTS -->
+        <div class="category-row">
+            <h2>Succulents</h2>
+            <div class="grid-wrapper">
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p18.jpg" alt="Aloe Vera"></div>
+                    <div class="product-info"><h4>String of Pearls</h4><p class="price">₹100</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p5.png" alt="Jade Plant"></div>
+                    <div class="product-info"><h4>Jade Plant</h4><p class="price">₹180</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p17.jpg" alt="Haworthia Zebra"></div>
+                    <div class="product-info"><h4>Haworthia </h4><p class="price">₹150</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p15.png" alt="Echeveria"></div>
+                    <div class="product-info"><h4>Echeveria</h4><p class="price">₹200</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. FLOWERING INDOOR PLANTS -->
+        <div class="category-row">
+            <h2>Flowering Indoor Plants</h2>
+            <div class="grid-wrapper">
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p12.png" alt="Anthurium"></div>
+                    <div class="product-info"><h4>Anthurium</h4><p class="price">₹300</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p13.png" alt="Moth Orchid"></div>
+                    <div class="product-info"><h4>Orchid</h4><p class="price">₹240</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p16.jpg" alt="African Violet"></div>
+                    <div class="product-info"><h4>Kalanchoe</h4><p class="price">₹300</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-box"><img src="img/p10.png" alt="Bromeliad"></div>
+                    <div class="product-info"><h4>Peace Lily</h4><p class="price">₹450</p><button class="add-to-cart-btn">Add to Cart</button></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer bg-dark-green">
+        <div class="container text-center">
+            <p style="color: white; padding: 20px 0;">&copy; 2026. Crafted by Ira Jaiswal.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
