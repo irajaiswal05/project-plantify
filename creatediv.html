@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border-radius: 12px;
+            transition: 0.50s;
+            width: 400px;
+            border: 2px solid #3E4F32;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            overflow: hidden;
+            background: #7eb369;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.title = "Create element"
+
+        var d = document.createElement("div");
+        document.body.appendChild(d);
+
+        d.className = "box"
+
+        d.innerHTML = "<button style='position:absolute; top:12px; right:15px; background:none; border:none; font-size:18px; font-weight:bold; color:#3E4F32; cursor:pointer;' onclick='closedilog()'>X</button>"
+
+        d.innerHTML += "<h1 style='color:#3E4F32; margin-top:20px; font-family:serif;'>Plantify</h1>"
+        d.innerHTML += "<hr style='border:1px solid #3E4F32; width:100%; margin:0;'>"
+        d.innerHTML += "<img src='images/ad1.gif' style='width:100%; display:block;'>"
+
+        function closedilog() {
+            document.body.removeChild(d)
+        }
+    </script>
+</body>
+</html>
